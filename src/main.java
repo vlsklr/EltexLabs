@@ -8,7 +8,11 @@ public class main {
         Electronics e= new Phone().create();
         data.add(e);
         data.add(ph);
+        data.get(0).update("iPhone", 777.77d, "Apple", "SE", "IOS","Block");
         data.get(0).read();
+
+    //    data.get(0).delete();
+
 
       //   ph = ph.create();
       // Phone ph2= (Phone) ph.create();

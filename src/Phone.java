@@ -14,6 +14,7 @@ public class Phone extends  Electronics {
     }
 
     @Override
+    // заполнение объекта случайными величинами
     public Phone create() {
         Random rnd = new Random();
         Electronics.objCounter++;
@@ -22,19 +23,33 @@ public class Phone extends  Electronics {
     }
 
     @Override
-    public  void update()
+    //Обновление данных объекта, вызвавшего метод, в зависимости от переданных параметров.
+    public  void update(String name, Double price,String manufacturer, String model, String operationSystem, String typeOfBody)
     {
-
+        this.name = name;
+        this.price = price;
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.operationSystem = operationSystem;
+        this.typeOfBody = typeOfBody;
     }
 
     @Override
+    //печать всех сведений об объекте, от которого вызывается метод.
     public void read() {
-        System.out.println(this.typeOfBody+" " + this.manufacturer + " "+ this.typeOfBody );
+        System.out.println("ID: "+ this.idofObject +  " Тип корпуса: " + this.typeOfBody+ " Фирма: " + this.manufacturer + " Название: "+ this.name + " Цена: " +this.price +" ОС: " +this.operationSystem +" Модель: " + this.model );
 
     }
 
     @Override
+    //обнуляем все поля для объекта, от имени котого вызван метод.
     public  void delete() {
+        this.name = null;
+        this.price = null;
+        this.operationSystem = null;
+        this.typeOfBody = null;
+        this.manufacturer = null;
+        this.model = null;
 
     }
 }
