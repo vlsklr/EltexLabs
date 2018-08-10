@@ -24,6 +24,7 @@ public abstract class Electronics implements ICrudAction{
         this.manufacturer = manufacturer;
         this.model = model;
         this.operationSystem = operationSystem;
+
     }
 
 

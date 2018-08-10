@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Phone extends  Electronics {
     String typeOfBody;
-    Phone phh;
+    //Phone phh;
     public Phone(String name, Double price, String manufacturer, String model, String operationSystem, String typeOfBody) {
         super(name, price, manufacturer, model, operationSystem);
         this.typeOfBody = typeOfBody;
@@ -22,12 +22,14 @@ public class Phone extends  Electronics {
     }
 
     @Override
-    public  void update() {
+    public  void update()
+    {
 
     }
 
     @Override
     public void read() {
+        System.out.println(this.typeOfBody+" " + this.manufacturer + " "+ this.typeOfBody );
 
     }
 
