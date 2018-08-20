@@ -67,6 +67,7 @@ public abstract class Electronics implements ICrudAction{
         this.model = String.valueOf(rnd.nextInt());
         this.manufacturer = String.valueOf(rnd.nextInt());
         this.price = rnd.nextDouble();
+        this.name = String.valueOf(rnd.nextInt());
 
     }
 }
