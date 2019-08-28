@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class main {
     public static volatile ArrayList<Electronics> data = new ArrayList<Electronics>();
     public static void main(String[] args) {
+        System.out.println("kek");
         // добавляем нужное количество девайсов в зависимости от передаваемых параметров (args[0] - количество девайсов, args[1] - тип девайса)
        /* if (Integer.parseInt(args[0]) > 0 && args[1].equals("Phone")) {
             for (int i = 0; i < Integer.parseInt(args[0]); i++) {
